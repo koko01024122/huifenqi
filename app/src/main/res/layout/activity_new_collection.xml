@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_collection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8d8d8"
+    android:orientation="vertical"
+    tools:context="com.example.cxhll.huifenq.Activitys.NewCollectionActivity">
+<include layout="@layout/actionbar"/>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:text="还 款 意 愿:"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <Spinner
+                    android:id="@+id/will_topay"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="此处输入备注"
+                android:gravity="left|top"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:text="提交"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

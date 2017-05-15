@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/actionbar"
+        android:id="@+id/order_bar"/>
+
+<RelativeLayout
+    android:id="@+id/big_rl"
+    android:layout_below="@+id/order_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    android:layout_marginBottom="40dp">
+    <ListView
+
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="没有订单，赶快去下单吧"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+
+        />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/menus"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/shapes"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:id="@+id/pa_shenheing"
+            android:layout_weight="1"
+            android:text="审核中"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:id="@+id/pa_notpass"
+            android:layout_weight="1"
+            android:text="未通过"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:id="@+id/pa_pass_orders"
+            android:layout_weight="1"
+            android:text="已发货"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:id="@+id/pa_makesures"
+            android:layout_weight="1"
+            android:text="待发货"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

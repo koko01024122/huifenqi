@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatCheckBox
+
+        android:id="@+id/overdue_checkbox"
+        android:layout_width="50dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/overdue_chose_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="裴磊磊"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/time_color"
+        android:layout_width="3dp"
+        android:layout_marginTop="15dp"
+        android:background="#991406"
+        android:layout_height="10dp" />
+    <TextView
+
+        android:id="@+id/overdue_chose_time"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="逾期3天"
+        android:textSize="18sp" />
+
+</LinearLayout>

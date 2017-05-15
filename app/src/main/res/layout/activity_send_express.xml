@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_send_express"
+    android:layout_width="match_parent"
+    android:background="#e1e0e0"
+    android:focusable="false"
+    android:layout_height="match_parent"
+    tools:context="com.example.cxhll.huifenq.Activitys.SendExpressActivity">
+<include layout="@layout/actionbar"
+    android:id="@+id/ase_bar"/>
+    <ScrollView
+        android:layout_below="@+id/ase_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/express_receiver_infos"
+            android:layout_below="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            >
+            <TextView
+                android:id="@+id/receiver_infos_text"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_height="40dp"
+                android:text="收货人信息"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_below="@+id/receiver_infos_text"
+                android:id="@+id/receiver_part1"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/receiver_name_text"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/receiver_infos_text"
+
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="收货人姓名："
+                    android:layout_height="40dp" />
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/receiver_infos_text"
+                    android:id="@+id/receiver_name_put"
+                    android:layout_toRightOf="@+id/receiver_name_text"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+            <LinearLayout
+            android:id="@+id/receiver_part2"
+            android:layout_below="@+id/receiver_part1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/receiver_tel_text"
+                    android:layout_below="@+id/receiver_name_text"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="收货人电话："
+
+                    android:layout_height="40dp" />
+                <EditText
+                    android:id="@+id/receiver_tel_put"
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"
+
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:inputType="phone|number"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/receiver_name_text"
+                    android:layout_toEndOf="@+id/receiver_tel_text" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/address_ll"
+                android:layout_below="@+id/receiver_part2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+                <TextView
+                    android:layout_weight="5"
+                    android:id="@+id/receiver_address_text_"
+                    android:layout_below="@+id/tv__new_receiverphonenum"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="收 货 地 址："
+                    android:layout_height="40dp" />
+                <TextView
+                    android:layout_weight="3"
+                    android:id="@+id/receiver_address_put"
+                    android:gravity="center|left"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="轻触选择地区"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="40dp"
+                    android:text=">>"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/receiver_address_detil"
+                android:layout_below="@+id/address_ll"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+
+                android:hint="输入详细地址"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/card1"
+            android:id="@+id/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/sender_infos_text"
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_height="40dp"
+                    android:text="发件人信息"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:id="@+id/default_part"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/sender_infos_text"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <TextView
+                            android:id="@+id/address_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="裴磊磊" />
+
+                        <TextView
+                            android:id="@+id/address_phonenum1"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_toRightOf="@+id/address_name1"
+                            android:gravity="center"
+                            android:text="18202770371" />
+
+                        <TextView
+                            android:id="@+id/address_address1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_below="@+id/address_name1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center|left|top"
+
+                            android:lines="2"
+                            android:text="湖北省武汉市洪山区巴拉巴拉湖北省武汉市洪山区巴拉巴拉湖北省武汉市洪山区巴拉巴拉" />
+                    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/address_edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/edit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="更改"
+            android:textColor="#000"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/address_del1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/addaddress"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="添加"
+            android:textColor="#000"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>
+
+                </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="#fff"
+            android:id="@+id/express_sender_infos"
+            android:layout_below="@+id/sender_infos_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+
+                android:id="@+id/sender_part1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/sender_name_text"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/receiver_infos_text"
+
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="发件人姓名："
+                    android:layout_height="40dp" />
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_marginRight="30dp"
+
+                    android:layout_below="@+id/sender_infos_text"
+                    android:id="@+id/sender_name_put"
+
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/sender_part1"
+                android:id="@+id/sender_part2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/sender_tel_text"
+                    android:layout_below="@+id/sender_name_text"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    android:text="发件人电话："
+
+                    android:layout_height="40dp" />
+                <EditText
+                    android:layout_weight="1"
+
+                    android:id="@+id/sender_tel_put"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="phone|number"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center|left"
+                    android:layout_below="@+id/sender_name_text"
+                    android:layout_toRightOf="@+id/sender_name_text"/>
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+
+                android:id="@+id/sender_address_ll"
+                android:layout_below="@+id/sender_part2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+                <TextView
+                    android:layout_weight="5"
+                    android:id="@+id/sender_address_text"
+                    android:layout_below="@+id/sender_tel_put"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="发 货 地 址："
+                    android:layout_height="40dp" />
+                <TextView
+                    android:layout_weight="3"
+                    android:id="@+id/sender_address"
+                    android:gravity="center|left"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="轻触选择地区"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="40dp"
+                    android:text=">>"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/sender_address_detil"
+                android:layout_below="@+id/sender_address_ll"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:hint="输入详细地址"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+        </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/card2"
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <RelativeLayout
+               android:background="#fff"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:id="@+id/comm_name_part"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp">
+                   <TextView
+                       android:layout_weight="1"
+                       android:layout_below="@+id/receiver_name_text"
+                       android:layout_width="100dp"
+                       android:layout_marginLeft="20dp"
+                       android:gravity="center|left"
+                       android:textSize="14sp"
+                       android:textStyle="bold"
+                       android:text="商 品 名 称："
+
+                       android:layout_height="40dp" />
+                   <EditText
+                       android:id="@+id/express_comm_name"
+                       android:layout_weight="1"
+                       android:layout_marginRight="30dp"
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+
+                       android:gravity="center|left"
+                       android:layout_marginLeft="20dp"/>
+               </LinearLayout>
+               <EditText
+                   android:layout_marginTop="5dp"
+
+                   android:id="@+id/express_remarks"
+                   android:layout_below="@+id/comm_name_part"
+                   android:layout_width="match_parent"
+                   android:gravity="top"
+                   android:lines="5"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:hint="在此处填写您要对快递小哥说的话"
+                   android:layout_height="100dp" />
+           </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card3"
+            android:layout_below="@id/card4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pay_type_part"
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="付款方式"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="20dp"
+                >
+                <RadioButton
+                    android:id="@+id/me_pay"
+                android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="现付"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/me_notpay"
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:text="到付"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <Button
+
+            android:id="@+id/express_send"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/card3"
+            android:layout_width="match_parent"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:text="提交"
+            android:shadowColor="#d8d8d8"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

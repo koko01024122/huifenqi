@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/actionbar"
+             android:id="@+id/system_bar"/>
+
+<LinearLayout
+    android:layout_marginTop="30dp"
+    android:layout_below="@+id/system_bar"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_height="500dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#d8d8d8"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_height="202dp">
+<RelativeLayout
+    android:shadowColor="#d8d8d8"
+    android:id="@+id/um"
+    android:clickable="true"
+
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:gravity="center"
+    android:layout_height="200dp">
+    <ImageView
+        android:id="@+id/um_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/um"/>
+    <TextView
+        android:layout_below="@+id/um_img"
+        android:text="用户管理"
+    android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:background="#d8d8d8"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_height="202dp">
+    <RelativeLayout
+
+
+        android:id="@+id/rm"
+
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:gravity="center"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/rm_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/rm"/>
+        <TextView
+            android:layout_below="@+id/rm_img"
+            android:text="角色管理"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>
+    </RelativeLayout>

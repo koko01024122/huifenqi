@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<TextView
+    android:id="@+id/success_banner"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:text="申请成功"
+    android:gravity="center|bottom"
+    android:textColor="#ea4130"
+    android:textSize="50sp"/>
+    <TextView
+        android:id="@+id/tv_succ_hint"
+        android:layout_below="@+id/success_banner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="订单已提交 请联系客户签订合同"
+        android:textColor="#ea4130"
+        android:textSize="11sp"
+       android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|"/>
+
+    <TextView
+        android:layout_below="@+id/tv_succ_hint"
+        android:id="@+id/tv_succ_orderstate"
+
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="订单状态："
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"/>
+    <TextView
+
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_succ_hint"
+        android:layout_toRightOf="@+id/tv_succ_orderstate"
+        android:text="待审核"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#0aa907"/>
+    <TextView
+        android:id="@+id/tv_succ_address_type"
+        android:layout_below="@+id/tv_succ_orderstate"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"
+        android:text="收货方式:"/>
+    <TextView
+        android:id="@+id/tv_succ_type"
+        android:layout_below="@+id/tv_succ_orderstate"
+        android:layout_toRightOf="@+id/tv_succ_address_type"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"
+        android:text="自提"/>
+<RelativeLayout
+    android:id="@+id/rl_address_success"
+    android:layout_below="@+id/tv_succ_address_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+
+        android:id="@+id/tv__succ_receiver"
+        android:layout_width="100dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="收货人姓名："
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/tv_succ_receivername"
+        android:layout_toRightOf="@+id/tv__succ_receiver"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"/>
+    <TextView
+        android:id="@+id/tv__succ_receiverphonenum"
+        android:layout_below="@+id/tv__succ_receiver"
+        android:layout_width="100dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="收货人电话："
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/et_succ_receiverphonenum"
+        android:layout_below="@+id/tv__succ_receiver"
+        android:layout_toRightOf="@+id/tv__succ_receiver"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"/>
+    <LinearLayout
+        android:id="@+id/ll_succ_address"
+        android:layout_below="@+id/tv__succ_receiverphonenum"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_succ_address"
+
+            android:layout_width="80dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center|left"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="收 货 地 址："
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/show_succ_address"
+            android:gravity="center|left"
+            android:layout_width="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+<TextView
+    android:id="@+id/tishi"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+     android:layout_below="@+id/rl_address_success"
+    android:text="此页面将在3秒后自动关闭"
+    android:gravity="center"
+    android:textColor="#ea4130"/>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_with_list_aty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cxhll.huifenq.Activitys.WithListAty">
+<include layout="@layout/actionbar"
+    android:id="@+id/with_bar"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:id="@+id/textbar"
+        android:layout_below="@+id/with_bar"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+<TextView
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:textColor="#000"
+    android:scrollbarSize="18dp"
+    android:text="金额"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:scrollbarSize="18dp"
+            android:textColor="#000"
+            android:text="类型"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:scrollbarSize="18dp"
+            android:textColor="#000"
+            android:text="    时间"/>
+    </LinearLayout>
+    <ListView
+        android:layout_below="@+id/textbar"
+        android:layout_width="match_parent"
+
+        android:id="@+id/with_lists"
+        android:layout_height="match_parent">
+
+    </ListView>
+</RelativeLayout>

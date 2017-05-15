@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/line"
+        android:orientation="vertical"
+        android:minHeight="10dp"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/overdue_text"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="我的逾期客户:"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/overdue_text"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/comm_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/c_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="昆明协顺商贸股份有限公司:"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/comm_name"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/home_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="裴磊磊"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+<ImageView
+    android:layout_marginTop="10dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="110dp"
+    android:background="#fff"
+    android:layout_width="1dp"
+    android:layout_height="80dp" />
+            <ImageView
+                android:id="@+id/qrcode"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/qrcodes" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/home_mpdle_one"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nine"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#ea4130"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="待签约"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:id="@+id/home_mpdle_two"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/five"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ea4130"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="待收货"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/home_mpdle_three"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/zero"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#ea4130"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="被拒单"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/home_mpdle_four"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/otsf"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="#ea4130"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="审核中"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/anno"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/announce" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="团队公告"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/express_helper"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/express" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="快递助手"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/overdue_start"
+                    android:layout_weight="1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/overdue"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="贷后管理"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                 />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/server"
+                    android:layout_weight="1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/service"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="客服中心"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                       />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/c_newest"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="20dp"
+            android:text="订单动态："
+
+
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/c_newestlist"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/c_newest"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:scrollbarSize="100dp"
+            android:visibility="gone">
+
+        </ListView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:layout_below="@+id/c_orders">
+
+            >
+
+            <TextView
+                android:id="@+id/chart_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/c_orders"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:text="销量报表"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+
+                android:id="@+id/home_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+
+                android:background="#fff" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

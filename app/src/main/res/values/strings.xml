@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">huifenq</string>
+
+    <string name="state_abnormal">审核中</string>
+    <string name="state_normal">已拒单</string>
+    <string name="cust_name">客户姓名</string>
+    <string name="con_num">联系电话</string>
+    <string name="refu_reason">拒单原因</string>
+    <string name="mail">站内信</string>
+    <string name="details">订单详情</string>
+    <string name="relationship">关系</string>
+    <string name="name">姓名</string>
+    <string name="Platform_name">平台名</string>
+    <string name="username">账号</string>
+    <string name="password">密码</string>
+    <string name="img">账单截图</string>
+    <string name="add_contacts">添加联系人</string>
+    <string name="add_bill">添加账单</string>
+    <string name="other_info">其他信息</string>
+    <string name="receiver">收货人姓名:</string>
+    <string name="stag_info">分期信息：</string>
+    <string name="order_num">订 单 号:</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_hometest">Hometest</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
+
+

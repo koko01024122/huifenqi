@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_readerd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cxhll.huifenq.Activitys.ReaderdActivity">
+<include layout="@layout/actionbar"
+    android:id="@+id/messbar"/>
+    <ListView
+        android:layout_below="@+id/messbar"
+        android:id="@+id/readered_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#e7e7e7"
+    >
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:id="@+id/c_infos"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="100dp"
+    >
+
+<TextView
+    android:id="@+id/c_names"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center|left"
+    android:layout_marginLeft="20dp"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:text="昆明协顺商贸股份有限公司:马克思"/>
+    <TextView
+        android:layout_below="@+id/c_name"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+
+        android:text="我的二维码："
+        />
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/c_name"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/qrcode"
+        android:layout_marginRight="50dp"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/c_infos"
+        android:id="@+id/c_orders"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/c_newest"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="最新订单："/>
+
+        <ListView
+            android:id="@+id/c_newestlist"
+            android:layout_below="@+id/c_newest"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </ListView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/c_orders"
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </RelativeLayout>
+</RelativeLayout>

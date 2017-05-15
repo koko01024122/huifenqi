@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_express"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cxhll.huifenq.Activitys.ExpressListActivity">
+<include layout="@layout/actionbar"
+    android:id="@+id/ace_bar"/>
+    <RelativeLayout
+        android:layout_below="@+id/ace_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/express_comm_lists"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+        <TextView
+            android:id="@+id/more_express"
+            android:layout_below="@+id/express_comm_lists"
+            android:layout_width="100dp"
+            android:text="历史快递"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</RelativeLayout>

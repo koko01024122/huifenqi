@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tips"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cxhll.huifenq.Activitys.TipsActivity">
+
+    <include layout="@layout/actionbar"
+        android:id="@+id/tips_bar"/>
+
+    <LinearLayout
+        android:divider="@drawable/line"
+        android:showDividers="middle|end"
+        android:layout_below="@+id/tips_bar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+<ListView
+    android:id="@+id/tips_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ListView>
+    </LinearLayout>
+</RelativeLayout>

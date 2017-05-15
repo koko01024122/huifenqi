@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_order_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    tools:context="com.example.cxhll.huifenq.Activitys.HomeOrderShowActivity">
+<include layout="@layout/actionbar"
+    android:id="@+id/ahos_bar"
+   />
+    <ListView
+        android:layout_below="@+id/ahos_bar"
+    android:id="@+id/ahos_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></ListView>
+    <RelativeLayout
+
+        android:id="@+id/ahos_nothing"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ahos_nothing_img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:src="@drawable/nothing"/>
+        <TextView
+            android:layout_toRightOf="@+id/ahos_nothing_img1"
+            android:id="@+id/ahos_text"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="这里空空如也"
+
+
+            android:textSize="30sp"
+            android:layout_gravity="center"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <include layout="@layout/actionbar"
+           android:id="@+id/orderinfo_bar"/>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/orderinfo_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <RelativeLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <include
+        layout="@layout/order_info"
+        android:id="@+id/order_incu"
+        />
+
+  <RelativeLayout
+      android:layout_below="@+id/order_incu"
+      android:id="@+id/up_pingzheng2"
+
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/order_pthotos"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_height="match_parent"
+          android:scrollbars="none">
+
+
+      </android.support.v7.widget.RecyclerView>
+
+  </RelativeLayout>
+
+
+
+
+
+  </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/real_up"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:clickable="true"
+
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/pingzhengimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/addimg"/>
+            <TextView
+                android:layout_below="@+id/pingzhengimg"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="上传收货凭证"
+                android:textSize="20sp"
+                android:layout_height="40dp"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+

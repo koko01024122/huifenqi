@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#dadada">
+<RelativeLayout
+    android:layout_marginTop="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#fff">
+<TextView
+    android:id="@+id/cu_success_text"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:textSize="70sp"
+    android:gravity="center"
+    android:textColor="#ea4130"
+    android:text="添加成功"/>
+    <RelativeLayout
+        android:layout_below="@+id/cu_success_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+<Button
+    android:id="@+id/cu_addmore"
+    android:layout_marginTop="20dp"
+    android:layout_width="150dp"
+    android:layout_height="40dp"
+    android:text="继续添加"/>
+    <Button
+        android:id="@+id/cu_return"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/cu_addmore"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="返回前页"/>
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

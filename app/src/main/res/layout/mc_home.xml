@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dadada"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/mc_bar"
+        layout="@layout/actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mc_bar">
+
+        <RelativeLayout
+            android:id="@+id/ware_nothing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <RelativeLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/express_nothing_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:gravity="center"
+                    android:src="@drawable/ware_list_img" />
+
+                <TextView
+                    android:id="@+id/express_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/express_nothing_img"
+                    android:gravity="center"
+                    android:text="没有商品信息"
+                    android:textSize="30sp"
+
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seach_c"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:visibility="gone">
+
+            <EditText
+
+                android:id="@+id/mc_seach"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:hint="搜索商品" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mc_add"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/seach_c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+
+                android:text="添加商品"
+                android:textSize="22sp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="添加商品"
+                    android:textSize="25sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mc_add">
+
+            <ListView
+                android:id="@+id/mc_lists"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

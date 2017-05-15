@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item   android:id="@+id/menu_seach"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/seach"
+        app:showAsAction="always"/>
+
+    <item   android:id="@+id/menu_add"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/add"
+        app:showAsAction="always"/>
+    <item   android:id="@+id/menu_reader"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/reader"
+        app:showAsAction="always"/>
+    <item   android:id="@+id/menu_finish"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/finish"
+        app:showAsAction="always"/>
+    <item   android:id="@+id/menu_adress"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/address"
+        app:showAsAction="always"/>
+    <item   android:id="@+id/menu_chose_start"
+        android:orderInCategory="100"
+        android:title="选择"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.cxhll.huifenq.Activitys.CreateUser">
+<include layout="@layout/actionbar"
+    android:id="@+id/bar"></include>
+
+<android.support.design.widget.TextInputLayout
+android:layout_below="@+id/bar"
+    android:id="@+id/cu_name"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="用户姓名"
+
+        />
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/cu_name"
+        android:id="@+id/cu_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="登录账号（手机号）"
+
+            android:inputType="phone"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/cu_username"
+        android:id="@+id/cu_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="登录密码"
+            />
+    </android.support.design.widget.TextInputLayout>
+   <android.support.v7.widget.AppCompatSpinner
+       android:id="@+id/cu_role"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_below="@+id/cu_password"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/cu_finish"
+        android:layout_below="@+id/cu_role"
+        android:layout_width="match_parent"
+        android:background="#ea4130"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#fff"
+        android:text="创建完成"
+        android:textSize="16sp"
+        android:layout_height="50dp" />
+</RelativeLayout>

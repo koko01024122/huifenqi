@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_qrcode_aty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cxhll.huifenq.Activitys.QrcodeAty">
+
+    <ImageView
+android:layout_below="@+id/name_pthoto"
+    android:id="@+id/rqcode_show"
+   android:layout_centerHorizontal="true"
+    android:layout_width="300dp"
+    android:background="#000"
+    android:layout_height="300dp" />
+    <TextView
+        android:id="@+id/clickcopy"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rqcode_show"
+        android:text="点击复制链接"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/name_pthoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+      >
+        <com.makeramen.roundedimageview.RoundedImageView
+
+            android:layout_width="60dp"
+            app:riv_oval="true"
+            android:layout_marginLeft="-30dp"
+            android:layout_gravity="center"
+           android:src="@drawable/photos"
+            android:layout_height="60dp"
+            android:id="@+id/qr_photo"/>
+
+        <TextView
+            android:text="NAME"
+            android:id="@+id/qr_name"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

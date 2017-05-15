@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context="com.example.cxhll.huifenq.Activitys.MyAddressActivity">
+<include layout="@layout/actionbar"
+    android:id="@+id/myadd_bar"
+    />
+<ListView
+    android:layout_below="@+id/myadd_bar"
+    android:id="@+id/address_list"
+    android:layout_width="match_parent"
+    android:dividerHeight="10dp"
+
+    android:layout_height="wrap_content">
+
+</ListView>
+
+</RelativeLayout>

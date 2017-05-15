@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/dialog_text"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="40dp"
+android:layout_marginLeft="20dp"
+    android:textSize="17sp"
+    android:text="哎喂，你信息没保存，真的要走么？"
+    android:layout_height="30dp"
+    android:gravity="center"/>
+</RelativeLayout>

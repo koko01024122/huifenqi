@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+   >
+    <include layout="@layout/actionbar"
+             android:id="@+id/um_bar"/>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_below="@+id/um_bar"
+    android:id="@+id/select_user_module"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#fff">
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="姓名"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_toRightOf="@+id/ui_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="角色"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_toRightOf="@+id/ui_role"
+        android:layout_width="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="40dp"
+        android:text="账号"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+</LinearLayout>
+
+<ListView
+    android:id="@+id/um_userlist"
+   android:layout_below="@+id/select_user_module"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"/>
+</RelativeLayout>

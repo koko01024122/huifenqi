@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<TextView
+    android:id="@+id/ui_name"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:text="张三"
+    android:textSize="20sp"
+    android:gravity="center"/>
+    <TextView
+        android:id="@+id/ui_role"
+        android:layout_toRightOf="@+id/ui_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="销售经理"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/ui_role"
+        android:id="@+id/ui_phonenum"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="13555887788"
+        android:textSize="20sp"
+        android:gravity="center"/>
+</RelativeLayout>

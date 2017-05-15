@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.cxhll.huifenq.Hometest"
+    android:background="#dadada">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/father"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/actionbar"/>
+<include layout="@layout/home_body"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="56dp"
+
+        android:layout_height="56dp"
+     android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        app:borderWidth="0dp"
+       android:src="@drawable/neworder"
+        android:layout_marginRight="10dp"
+        android:id="@+id/floatingActionButton" />
+</android.support.design.widget.CoordinatorLayout>

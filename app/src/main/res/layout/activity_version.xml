@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_version"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cxhll.huifenq.Activitys.VersionActivity">
+
+    <include
+        android:id="@+id/version_bar"
+        layout="@layout/actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:layout_below="@+id/version_bar">
+
+        <ImageView
+            android:id="@+id/v_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/version_num"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/v_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="惠分期 v1.2.0"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/version_num"
+            android:layout_marginTop="20dp"
+            android:divider="@drawable/line"
+            android:orientation="vertical"
+
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/check_update"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center|left"
+                android:text="  检查更新"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/feed_back"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center|left"
+                android:text="  意见反馈"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="北京榆钱投资管理有限公司"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="版权所有"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</RelativeLayout>

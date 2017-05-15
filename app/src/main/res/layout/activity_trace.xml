@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cxhll.huifenq.Activitys.TraceActivity">
+<include layout="@layout/actionbar"
+    android:id="@+id/trace_bar"/>
+    <RelativeLayout
+        android:id="@+id/detail_part"
+        android:layout_below="@+id/trace_bar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="100dp">
+
+
+<ImageView
+    android:id="@+id/trace_comm_imgs"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:src="@drawable/sf"/>
+        <TextView
+            android:id="@+id/trace_cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/trace_comm_imgs"
+            android:textColor="#fff"
+            android:text=" "
+            android:textStyle="bold"
+            android:gravity="center|left"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/trace_comm_name"
+            android:layout_below="@+id/trace_cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:layout_toRightOf="@+id/trace_comm_imgs"
+            android:textColor="#fff"
+            android:text=""
+            android:textStyle="bold"
+            android:gravity="center|left"
+            android:layout_marginRight="70dp"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/trace_save"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/save"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+<ListView
+    android:id="@+id/trace_infos_list"
+    android:layout_below="@+id/detail_part"
+    android:layout_width="match_parent"
+    android:divider="#00000000"
+    android:dividerHeight="0dip"
+    android:layout_height="match_parent"></ListView>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_anno_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.example.cxhll.huifenq.Activitys.AnnoShowActivity">
+<include layout="@layout/actionbar"
+    /><LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:divider="@drawable/line"
+    android:showDividers="middle"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/aas_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="标题"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center|left"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <TextView
+        android:id="@+id/aas_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="发布人"/>
+    <TextView
+        android:id="@+id/aas_sendtime"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="发布时间"
+        android:gravity="center"/>
+</LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/aas_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center|left|top"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="这是一条通知的测试信息这条信息用于测试"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+</LinearLayout>

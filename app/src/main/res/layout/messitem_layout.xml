@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_mess_reson"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        android:text="请更换紧急联系人"
+        android:gravity="center|left"
+        android:layout_below="@+id/tv_mess_name"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tv_mess_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="姓名:"
+        android:layout_marginLeft="30dp"
+        android:gravity="center|left"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+
+      android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:id="@+id/mess_time"
+
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="1月1日"
+        android:textSize="20sp"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="40dp"/>
+
+    <TextView
+
+        android:id="@+id/tv_mess_state"
+        android:text="@string/state_normal"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+
+        android:layout_below="@+id/mess_time"
+        android:layout_toRightOf="@+id/tv_mess_reson"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+
+        android:gravity="center|right"
+        android:paddingRight="30dp"
+        android:textColor="#ea4130"
+        android:textSize="18sp"
+        android:textStyle="bold"
+       />
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tv_mess_state_pass"
+        android:layout_below="@+id/mess_time"
+        android:layout_toRightOf="@+id/tv_mess_reson"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="@string/state_abnormal"
+        android:gravity="center|right"
+        android:paddingRight="30dp"
+        android:textColor="#088905"
+        android:textSize="18sp"
+        android:textStyle="bold"
+      />
+</RelativeLayout>

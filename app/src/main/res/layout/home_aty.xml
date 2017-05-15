@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:id="@+id/gonggaorl"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="#eeccc6c6"
+    >
+
+    <TextView
+        android:id="@+id/gonggaobutt"
+    android:textSize="18sp"
+    android:layout_width="70dp"
+    android:layout_height="40dp"
+    android:text="公告"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/gonggao"
+        android:background="#fff"
+        android:text="惠分期是一家非常牛逼的公司，非常非常牛逼，牛逼的 你不要不要的"
+        android:textSize="18sp"
+        android:layout_below="@+id/gonggaobutt"
+        android:layout_width="match_parent"
+        android:layout_height="105dp" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/erweimatext"
+        android:layout_below="@+id/gonggaorl"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:text="我的二维码："/>
+    <ImageView
+        android:id="@+id/erweima_img"
+        android:layout_below="@+id/gonggaorl"
+        android:layout_width="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp" />
+    <RelativeLayout
+        android:id="@+id/home_modle1"
+        android:layout_below="@+id/erweimatext"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/home_neworder"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="快速下单"
+                android:textSize="30sp"
+                android:background="#fff"/>
+
+            <Button
+                android:id="@+id/excamine"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:text="审核收货"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+               />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/home_orders"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="订单管理"
+                android:textSize="30sp"
+                android:background="#fff"
+              />
+
+            <Button
+                android:id="@+id/home_commodity"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:text="商品管理"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/home_money"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="财务中心"
+                android:textSize="30sp"
+                android:background="#fff"
+                />
+
+            <Button
+                android:id="@+id/home_notice"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:text="下单须知"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/home_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="100dp"
+            android:background="#1d1d1d"/>
+        <ImageView
+            android:id="@+id/home_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="200dp"
+            android:background="#1d1d1d"/>
+        <ImageView
+            android:id="@+id/home_vline1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#1d1d1d"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

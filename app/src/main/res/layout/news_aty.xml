@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    android:background="#dadada">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"/>
+
+    </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#fff">
+<Button
+    android:id="@+id/mustknow1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+    android:text="商户须知1"
+        android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/mustknow2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="商户须知2"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>
+</RelativeLayout>

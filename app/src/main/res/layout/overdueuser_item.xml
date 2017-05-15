@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:id="@+id/overdueuseritem_"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RadioButton
+        android:id="@+id/select_overdue"
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+
+<TextView
+    android:id="@+id/ui_name"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:text="张三"
+    android:layout_marginLeft="40dp"
+    android:textSize="20sp"
+    android:gravity="center"/>
+    <TextView
+        android:id="@+id/ui_role"
+        android:layout_toRightOf="@+id/ui_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="销售经理"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+</RelativeLayout>

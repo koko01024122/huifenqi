@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cxhll.huifenq">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.example.cxhll.huifenq" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.example.cxhll.huifenq" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.cxhll.huifenq" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver android:name=".BootCompleteReceliver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTIONS_STAR" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".server.JpushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ShenheList" />
+        <activity android:name=".Activitys.RmAty" />
+        <activity android:name=".Activitys.RoleManageAty" />
+        <activity android:name=".Activitys.SystemManageAty" />
+        <activity android:name=".Activitys.NoticeActivity" />
+        <activity
+            android:name=".Activitys.OrderListAty"
+            android:label="订单列表" />
+        <activity
+            android:name=".Activitys.MessAty"
+            android:label="站内信" />
+        <activity android:name=".Activitys.MoneyAty" />
+        <activity
+            android:name=".Activitys.MesList"
+            android:label="站内信" />
+        <activity
+            android:name=".Activitys.NewOrderAty"
+            android:label="快速下单" />
+        <activity
+            android:name=".Activitys.OrderSuccAty"
+            android:label="成功" />
+
+        <service android:name=".MessRuningService" />
+
+        <activity android:name=".Activitys.NulllActivity" />
+        <activity
+            android:name=".Activitys.OrderinfoAty"
+            android:label="订单详情" />
+        <activity android:name=".ShenheAty" />
+        <activity android:name=".Activitys.CreateWaresAty" />
+        <activity
+            android:name=".Lodingactivity"
+            android:label="惠分期">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity
+            android:name=".Success"
+            android:label="登录成功" />
+        <activity android:name=".Home" />
+        <activity
+            android:name=".Hometest"
+            android:label="控制台"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activitys.McHome" />
+        <activity android:name=".Activitys.CreateUser" />
+        <activity android:name=".Activitys.UserMAty" />
+        <activity android:name=".Activitys.QrcodeAty" />
+        <activity android:name=".Activitys.ReaderdActivity" />
+        <activity android:name=".Activitys.WithListAty" />
+        <activity android:name=".Activitys.SeachActivity" />
+        <activity android:name=".Activitys.SettingActivity" />
+        <activity android:name=".Activitys.MoneysActivity" />
+        <activity android:name=".Activitys.ForgetpsdActivity" />
+        <activity android:name=".Activitys.ContactUsActivity" />
+        <activity android:name=".Activitys.AnnouActivity" />
+        <activity android:name=".Activitys.CreateAnnoActivity" />
+        <activity android:name=".Activitys.ChangePsdActivity" />
+        <activity android:name=".Activitys.VersionActivity" />
+        <activity android:name=".Activitys.FeedBackActivity" />
+        <activity android:name=".Activitys.OrderManageActivity" />
+        <activity android:name=".Activitys.TipsActivity" />
+        <activity android:name=".Activitys.ExpressActivity" />
+        <activity android:name=".Activitys.SelectExpressActivity" />
+        <activity android:name=".Activitys.TraceActivity" />
+        <activity android:name=".Activitys.ExpressListActivity" />
+        <activity android:name=".Activitys.SendExpressActivity" />
+        <activity android:name=".Activitys.ExpressFinishActivity" />
+        <activity android:name=".Activitys.GuideActivity" />
+        <activity android:name=".Activitys.AnnoShowActivity" />
+        <activity android:name=".Activitys.HomeOrderShowActivity" />
+        <activity android:name=".Activitys.WebViewActivity" />
+        <activity
+            android:name="com.zfdang.multiple_images_selector.ImagesSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".Activitys.MyAddressActivity" />
+        <activity android:name=".Activitys.NewAddressActivity" />
+        <activity android:name=".Activitys.OverdueCustomesListActivity" />
+        <activity android:name=".Activitys.OverListActivity"></activity>
+        <activity android:name=".Activitys.NewTrainOrderAty"/>
+        <activity android:name=".Activitys.TuringActivity"/>
+        <activity android:name=".Activitys.CollectionFollowActivity"/>
+        <activity android:name=".Activitys.NewCollectionActivity"/>
+    </application>
+
+</manifest>

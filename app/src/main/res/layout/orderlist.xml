@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_od_name"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"
+        android:text="李强"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/od_trade_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_od_name"
+        android:layout_marginLeft="20dp"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:lines="1"
+        android:text="戴尔120824G内存120GSSD" />
+
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="90dp"
+
+        android:gravity="center"
+        android:text="1月1日"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_od_state"
+        android:layout_width="wrap_content"
+
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_od_name"
+
+        android:layout_marginRight="92dp"
+        android:gravity="center"
+        android:text="@string/state_normal"
+        android:textColor="#ea4130"
+
+
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_od_state_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_od_name"
+        android:layout_marginRight="92dp"
+        android:gravity="center"
+        android:text="@string/state_abnormal"
+        android:textColor="#088905"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/function_part"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/function_sonpart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+
+                android:id="@+id/function_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/touch" />
+
+            <TextView
+                android:id="@+id/function_num"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="1"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/function_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/function_sonpart"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="已上传凭证"
+            android:textColor="#000" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="#dadada">
+    <include layout="@layout/actionbar"
+        android:id="@+id/eu_bar"></include>
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/eu_name"
+    android:layout_below="@+id/eu_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <EditText
+        android:id="@+id/eu_ed_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:hint="请输入用户名"/>
+
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/eu_name"
+        android:id="@+id/eu_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/eu_ed_username"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:hint="请输入手机号（登录账号）"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/eu_username"
+        android:id="@+id/eu_psd"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/eu_ed_psd"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:hint="请设置登录密码"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/eu_role"
+        android:layout_below="@+id/eu_psd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#fff">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/eu_create"
+        android:layout_below="@+id/eu_role"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ea4130"
+        android:text="完成"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</RelativeLayout>

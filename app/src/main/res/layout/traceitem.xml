@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:id="@+id/data_part"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+
+            android:id="@+id/detil_time"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+
+            android:text="12:00"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detil_day"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/detil_time"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:lines="1"
+            android:text="2017-01-12" />
+
+        <ImageView
+            android:id="@+id/botton_line"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/detil_day"
+            android:layout_centerHorizontal="true"
+            android:background="#ea3130" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/trace_detil"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/data_part"
+        android:gravity="center|left"
+        android:lines="3"
+        android:text="没查到没查到没查到没查到没查到没查到没查到没查到没查到没查到"
+        android:textSize="16sp" />
+</RelativeLayout>

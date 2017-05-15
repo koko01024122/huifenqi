@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/actionbar"
+        android:id="@+id/shenhe_bar"></include>
+    <TextView
+        android:layout_below="@+id/shenhe_bar"
+        android:id="@+id/shenhe"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#ea1300"
+        android:text="审核功能"
+        android:gravity="center"
+        android:textSize="30sp"/>
+    <ListView
+        android:layout_below="@+id/shenhe"
+        android:id="@+id/shenhe_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

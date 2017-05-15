@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/guo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/nothing_part4"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/nothing_img4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:gravity="center"
+            android:src="@drawable/nothing"/>
+        <TextView
+            android:layout_toRightOf="@+id/nothing_img4"
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="这里空空如也"
+
+
+            android:textSize="30sp"
+            android:layout_gravity="center"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

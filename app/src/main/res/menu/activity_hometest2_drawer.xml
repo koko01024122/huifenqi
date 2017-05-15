@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/all_order"
+            android:icon="@drawable/orders"
+            android:title="订单管理"/>
+        <item
+            android:id="@+id/all_shangpin"
+            android:icon="@drawable/cm"
+            android:title="商品管理"/>
+        <item
+            android:id="@+id/money"
+            android:icon="@drawable/money"
+            android:title="财务中心"
+
+            />
+        <item
+            android:id="@+id/system"
+            android:icon="@drawable/system"
+            android:title="系统管理"
+            />
+
+    </group>
+<group android:id="@+id/other">
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/setting"
+        android:title="设置"/>
+    <item
+        android:id="@+id/nav_night"
+        android:visible="false"
+        android:icon="@drawable/setting"
+        android:title="夜间模式"/>
+</group>
+
+
+</menu>

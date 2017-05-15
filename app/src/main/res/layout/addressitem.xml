@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:id="@+id/addressitem"
+    android:divider="@drawable/line"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="裴磊磊" />
+
+        <TextView
+            android:id="@+id/address_phonenum"
+
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/address_name"
+            android:gravity="center"
+            android:text="18202770371" />
+
+        <TextView
+            android:id="@+id/address_address"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/address_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|left|top"
+
+            android:lines="2"
+            android:text="湖北省武汉市洪山区巴拉巴拉湖北省武汉市洪山区巴拉巴拉湖北省武汉市洪山区巴拉巴拉" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:id="@+id/address_default"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="默认地址" />
+
+        <LinearLayout
+            android:id="@+id/address_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+         >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/edit"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="编辑"
+                android:textColor="#000"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/address_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/del"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="删除"
+                android:textColor="#000"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
